@@ -246,9 +246,9 @@ graph TD
 8. **Report Generation**: Creates both Markdown mentor summary and PDF technical report
 9. **Storage**: Complete evaluation saved to database, leaderboard updated
 
-**Average Processing Time:**
-- PPT Evaluation: **~45 seconds**
-- GitHub Evaluation: **~75 seconds**
+**Typical Processing Time:**
+- PPT Evaluation: **~30-60 seconds**
+- GitHub Evaluation: **~60-90 seconds**
 
 ---
 
@@ -277,17 +277,17 @@ graph TD
 - Team leader controls and member management
 
 ✅ **PPT Submission & Evaluation**
-- Upload PowerPoint files (up to 50MB)
+- Upload PowerPoint files
 - Receive AI evaluation in under 60 seconds
 - View overall score and per-slide breakdown
 - Read detailed mentor feedback with improvement suggestions
 
 ✅ **GitHub Repository Submission & Evaluation**
 - Submit GitHub repository URL and demo video
-- Multi-phase analysis with 7 evaluation phases
+- Multi-phase analysis with 9 evaluation phases
 - Receive comprehensive scoring (Logic, Relevance, Style, Plagiarism, Quality)
-- Download PDF technical report
-- Get AI-generated code rewrite suggestions
+- View AI-generated mentor report and rewrite suggestions
+- Grade assignment (A+ to D) based on final score
 
 ✅ **Real-Time Leaderboards**
 - Per-round rankings (separate for PPT, GitHub, etc.)
@@ -304,18 +304,6 @@ graph TD
 - Framer Motion animations
 - Mobile-responsive design
 - Role-based dashboard views
-
-### Try It Live:
-
-**Step 1**: Visit https://eval-x.vercel.app/
-
-**Step 2**: Sign up as an organizer → Create a new hackathon event
-
-**Step 3**: Switch to developer account → Join the event → Form a team
-
-**Step 4**: Submit a sample PowerPoint presentation OR GitHub repository
-
-**Step 5**: **See AI evaluation results instantly** with scores and detailed feedback
 
 ---
 
@@ -682,78 +670,7 @@ evalx/
 
 **5. Production-Ready Architecture**
 - Not just a prototype - built with scalable, async architecture
-- Live deployment at https://eval-x.vercel.app/
-- Real hackathons can use it today
-
----
-
-## ✅ Feasibility & Validation
-
-### Why EvalX Works in the Real World:
-
-**Proven Tech Stack**: Built on production-grade frameworks (FastAPI, React 19) used by major companies
-
-**Cost-Effective AI**: Uses GPT-4o-mini (~$0.15 per 1 million tokens) instead of expensive models. Average cost per evaluation: ~$0.02
-
-**Scalable Architecture**: Async processing allows handling multiple submissions simultaneously. Current capacity: 50+ concurrent evaluations
-
-**Real Performance Data**:
-- PPT Evaluation: 45 seconds average
-- GitHub Evaluation: 75 seconds average
-- API Response Time: <200ms
-- Uptime: 99.9% (Azure Container Apps)
-
-**Live Deployment**: Not just localhost - fully deployed and accessible at https://eval-x.vercel.app/
-
----
-
-## 🤝 Contributing
-
-We welcome contributions! Here's how you can help:
-
-1. **Fork the repository**
-2. **Create a feature branch**: `git checkout -b feature/amazing-feature`
-3. **Commit your changes**: `git commit -m 'Add amazing feature'`
-4. **Push to the branch**: `git push origin feature/amazing-feature`
-5. **Open a Pull Request**
-
-### Areas We Need Help:
-- Frontend UI/UX improvements
-- Additional code analysis tools integration
-- Domain-specific evaluators (Web3, IoT, etc.)
-- Documentation and tutorials
-- Bug reports and testing
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 👥 Team
-
-Built with ❤️ by passionate hackathon participants who experienced the pain of subjective evaluation firsthand.
-
-**Contributors**: [Add your GitHub profiles here]
-
----
-
-## 📞 Contact & Support
-
-- **Live Demo**: https://eval-x.vercel.app/
-- **Issues**: [GitHub Issues](https://github.com/your-username/evalx/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/your-username/evalx/discussions)
-
----
-
-## 🎉 Acknowledgments
-
-- OpenAI for GPT-4o-mini API
-- Groq for fast Llama inference
-- The hackathon community for inspiration
-- All open-source contributors whose tools make EvalX possible
+- Frontend deployment at https://eval-x.vercel.app/
 
 ---
 
