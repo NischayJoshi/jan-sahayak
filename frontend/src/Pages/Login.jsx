@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { FiGithub } from "react-icons/fi";
 import { FcGoogle } from "react-icons/fc";
-import api from "@/utils/api"; // <-- using your axios instance
+import api from "@/utils/api"; 
 
 export default function Login() {
   const [email, setEmail] = useState("");

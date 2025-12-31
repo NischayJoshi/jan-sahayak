@@ -82,8 +82,7 @@ export default function EventSubmissions({
 });
 
 
-    // Or Option 2: open new tab
-    // window.open(`/interview/${sessionId}`, "_blank");
+   
   } catch (e) {
     alert(e?.response?.data?.detail || "Failed to start interview");
   } finally {
@@ -151,9 +150,6 @@ export default function EventSubmissions({
     }
   };
 
-  // -------------------
-  // ⭐ PPT PREMIUM VIEW
-  // -------------------
   const renderPPT = (sub, submittedAt, ai) => {
     const score = ai?.score?.overall_score;
     const deck = ai?.deck_summary || {};
@@ -161,7 +157,7 @@ export default function EventSubmissions({
     return (
       <div className="space-y-6">
 
-        {/* Status & Submission Time */}
+        {/* Status */}
         <div className="flex items-center justify-between">
           <span className="inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-[11px] font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200 shadow-sm">
             ✓ Submitted
@@ -273,9 +269,7 @@ export default function EventSubmissions({
     );
   };
 
-  // --------------------------------
-  // ⭐ REPO PREMIUM VIEW
-  // --------------------------------
+
   const renderRepo = (sub, submittedAt) => {
     const ev = sub.evaluation || {};
     const finalScore =
@@ -393,9 +387,7 @@ export default function EventSubmissions({
     );
   };
 
-  // ------------------------------
-  // RENDER SUBMITTED STATE
-  // ------------------------------
+ 
   const renderSubmittedState = (roundId, submission) => {
     const submittedAt = submission?.submittedAt
       ? new Date(submission.submittedAt)
@@ -423,9 +415,7 @@ export default function EventSubmissions({
     );
   };
 
-  // ------------------------------
-  // RENDER INPUT UI
-  // ------------------------------
+
   const renderUI = () => {
     if (!active)
       return <p className="text-sm text-neutral-500">No rounds defined</p>;
